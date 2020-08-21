@@ -5,10 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { ToolbarComponent } from './core/components/toolbar/toolbar.component';
+import { CardComponent } from './shared/components/card/card.component';
+import { CircleLinkComponent } from './shared/components/circle-link/circle-link.component';
+import { CardContainerComponent } from './shared/layout/card-container/card-container.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ToolbarComponent,
+    CardComponent,
+    CircleLinkComponent,
+    CardContainerComponent
   ],
   imports: [
     BrowserModule,

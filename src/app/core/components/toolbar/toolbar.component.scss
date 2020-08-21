@@ -1,0 +1,28 @@
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary__color);
+  color: var(--text__on-primary__color);
+  font-weight: 600;
+  img {
+    margin: 0 16px;
+  }
+  .spacer {
+    flex: 1;
+  }
+  #twitter-logo {
+    height: 40px;
+    margin: 0 16px;
+    path {
+      fill: var(--text__on-primary__color);
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

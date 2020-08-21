@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+@import "styles/fonts";
+
+$c__purple: #9494FF;
+$c__purple-light: #B3B3FF;
+$c__success: #9CFF94;
+$c__info: #94C0FF;
+$c__warning: #FFDB94;
+$c__danger: #FF9C94;
+$c__black-almost: #0F0F0F;
+$c__white-almost: #F0F0F0;
+$c__gray-dark: #2B2B2B;
+$c__gray: #363636;
+$c__gray-light: #5F5F5F;
+
+:root {
+  --text__font: 'Baloo 2';
+  --primary__color: #{$c__purple};
+
+  --text__color: #{$c__white-almost};
+  --text__on-primary__color: #{$c__black-almost};
+  --text__on-success__color: #{$c__black-almost};
+  --text__on-info__color: #{$c__black-almost};
+  --text__on-warning__color: #{$c__black-almost};
+  --text__on-danger__color: #{$c__black-almost};
+  --text--primary__on-background__color: #{$c__purple-light};
+
+  --background__color: #{$c__gray};
+  --background-success__color: #{$c__success};
+  --background-info__color: #{$c__info};
+  --background-warning__color: #{$c__warning};
+  --background-danger__color: #{$c__danger};
+
+  --card__color: #{$c__gray-dark};
+  --card__border: 1px solid #{$c__gray-light};
+  --card--primary__color: var(--primary__color);
+  --card--primary__text: var(--text__on-primary__color);
+  --card--success__color: var(--background-success__color);
+  --card--success__text: var(--text__on-success__color);
+  --card--info__color: var(--background-info__color);
+  --card--info__text: var(--text__on-info__color);
+  --card--warning__color: var(--background-warning__color);
+  --card--warning__text: var(--text__on-warning__color);
+  --card--danger__color: var(--background-danger__color);
+  --card--danger__text: var(--text__on-danger__color);
+
+  body {
+    font-family: var(--text__font);
+    color: var(--text__color);
+    background-color: var(--background__color);
+  }
+}
+
+a,
+a:visited,
+a:hover {
+  color: var(--primary__color);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--text--primary__color--dark);
+  }
+}
+
+svg.material-icons {
+  height: 24px;
+  width: auto;
+}
+
+svg.material-icons:not(:last-child) {
+  margin-right: 8px;
+}
