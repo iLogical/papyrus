@@ -15,27 +15,11 @@
     align-items: center;
     transition: all 0.2s ease-in-out;
     line-height: 24px;
+    cursor: inherit;
 
     &:not(:last-child) {
       margin-right: 0;
     }
-  }
-}
-
-:host(:not(.card--primary):not(.card--success):not(.card--info):not(.card--warning):not(.card--danger)) {
-  .card {
-    cursor: pointer;
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-    }
-  }
-}
-
-:host(.card--small) {
-  .card {
-    height: 16px;
-    width: 168px;
   }
 }
 
@@ -50,6 +34,14 @@
     span {
       margin-left: 60px;
     }
+  }
+}
+
+:host(.card--small) {
+  .card {
+    height: 16px;
+    width: 168px;
+    margin: auto;
   }
 }
 

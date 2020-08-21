@@ -8,16 +8,19 @@ import {Component, Input, OnInit} from '@angular/core';
 export class CircleLinkComponent implements OnInit {
 
   @Input()
-  title: string;
+  public title: string;
 
   @Input()
-  href: string;
+  public href: string;
 
   @Input()
-  target: string;
+  public target: string;
 
   @Input()
-  rel: string;
+  public rel: string;
+
+  @Input()
+  public ariaLabel: string;
 
   constructor() { }
 

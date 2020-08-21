@@ -9,6 +9,7 @@ import { ToolbarComponent } from './core/components/toolbar/toolbar.component';
 import { CardComponent } from './shared/components/card/card.component';
 import { CircleLinkComponent } from './shared/components/circle-link/circle-link.component';
 import { CardContainerComponent } from './shared/layout/card-container/card-container.component';
+import { ButtonComponent } from './shared/components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CardContainerComponent } from './shared/layout/card-container/card-cont
     ToolbarComponent,
     CardComponent,
     CircleLinkComponent,
-    CardContainerComponent
+    CardContainerComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

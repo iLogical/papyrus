@@ -1,20 +1,27 @@
 @import "styles/fonts";
 
-$c__purple: #9494FF;
+$c__purple: #9494ff;
 $c__purple-light: #B3B3FF;
 $c__success: #9CFF94;
+$c__success-light: #b9ffb3;
 $c__info: #94C0FF;
+$c__info-light: #B3D2FF;
 $c__warning: #FFDB94;
+$c__warning-light: #FFE5B3;
 $c__danger: #FF9C94;
+$c__danger-light: #FFB9B3;
 $c__black-almost: #0F0F0F;
 $c__white-almost: #F0F0F0;
 $c__gray-dark: #2B2B2B;
+$c__gray-darker: #313131;
 $c__gray: #363636;
-$c__gray-light: #5F5F5F;
+$c__gray-lighter: #434343;
+$c__gray-light: #505050;
 
 :root {
   --text__font: 'Baloo 2';
   --primary__color: #{$c__purple};
+  --primary--light__color: #{$c__purple-light};
 
   --text__color: #{$c__white-almost};
   --text__on-primary__color: #{$c__black-almost};
@@ -42,6 +49,34 @@ $c__gray-light: #5F5F5F;
   --card--warning__text: var(--text__on-warning__color);
   --card--danger__color: var(--background-danger__color);
   --card--danger__text: var(--text__on-danger__color);
+
+  --button__color: #{$c__gray-dark};
+  --button__ripple__color: rgba(236, 240, 241, .03);
+  --button__text__color: var(--text--primary__on-background__color);
+  --button--hover__color: #{$c__gray-darker};
+  --button--hover__text__color: #{$c__white-almost};
+  --button__border: 1px solid #{$c__gray-light};
+  --button--colored__ripple__color: rgba(19, 15, 14, .07);
+  --button--primary__color: var(--primary__color);
+  --button--primary__text: var(--text__on-primary__color);
+  --button--primary--hover__color: var(--primary--light__color);
+  --button--primary--hover__text__color: #{$c__black-almost};
+  --button--success__color: var(--background-success__color);
+  --button--success__text: var(--text__on-success__color);
+  --button--success--hover__color: #{$c__success-light};
+  --button--success--hover__text__color: #{$c__black-almost};
+  --button--info__color: var(--background-info__color);
+  --button--info__text: var(--text__on-info__color);
+  --button--info--hover__color: #{$c__info-light};
+  --button--info--hover__text__color: #{$c__black-almost};
+  --button--warning__color: var(--background-warning__color);
+  --button--warning__text: var(--text__on-warning__color);
+  --button--warning--hover__color: #{$c__warning-light};
+  --button--warning--hover__text__color: #{$c__black-almost};
+  --button--danger__color: var(--background-danger__color);
+  --button--danger__text: var(--text__on-danger__color);
+  --button--danger--hover__color: #{$c__danger-light};
+  --button--danger--hover__text__color: #{$c__black-almost};
 
   body {
     font-family: var(--text__font);
